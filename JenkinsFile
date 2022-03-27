@@ -1,0 +1,20 @@
+pipeline{
+  stages{
+    stage('Build'){
+     steps{
+       echo "Builing Application..."
+     }
+    }
+    stage('Test'){
+      steps{
+        echo "Testing Application.."
+        echo "Running Automation Suite.."
+      }
+    }
+    stage('Deploye'){
+      steps{
+        echo "Deploying Application.."
+      }
+    }
+  }
+}
